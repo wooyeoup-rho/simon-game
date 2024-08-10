@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <!--Game -->
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+    <!--Instructions -->
+    <div type="button" id="manual-btn" class="main-button manual-button">
+      <h2 class="main-button-text">Manual</h2>
+    </div>
+
+    <div class="hide main-menu" id="manual-menu">
+      <h2 class="main-button-text">Manual</h2>
+      <div class="option-container">
+        <p>Project developed in 'The Complete 2024 Web Development Bootcamp' in Udemy.</p>
+      </div>
+      <div class="option-container">
+        <p>One of four lights will flash per level, and you need to remember the order in which they flash and reproduce the entire sequence.</p>
+      </div>
+      <div class="option-container">
+        <div class="main-button manual-button">
+          <h2 class="main-button-text">HIDE</h2>
+        </div>
+      </div>
+    </div>
+
+    <!--Options -->
+    <div type="button" id="options-btn" class="main-button option-button">
+      <h2 class="main-button-text">Options</h2>
+    </div>
+
+    <div class="hide main-menu" id="option-menu">
+      <h2 class="main-button-text">Options</h2>
+      <div class="row-container">
+        <div class="option-container">
+          <p>PATTERN</p>
+          <div id="pattern-button" class="option-toggle-button easy">
+            <p id="pattern-text">SHOW</p>
+          </div>
+        </div>
+        <div class="option-container">
+          <p>OPTION 2</p>
+          <div id="id-button" class="option-toggle-button easy">
+            <p id="id-text">2</p>
+          </div>
+        </div>
+        <div class="option-container">
+          <p>OPTION 3</p>
+          <div id="id-button" class="option-toggle-button easy">
+            <p id="id-text">3</p>
+          </div>
+        </div>
+        <div class="option-container">
+          <div class="main-button option-button">
+            <h2 class="main-button-text">HIDE</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Changelog -->
+    <div type="button" id="changelog-btn" class="main-button changelog-button">
+      <h2 class="main-button-text">Changelog</h2>
+    </div>
+
+    <div class="hide main-menu" id="changelog-menu">
+      <h2 class="main-button-text">Changelog</h2>
+      <div class="option-container">
+        <ol>
+          <li><p>Added options and changelog.</p></li>
+          <li><p>Added pattern playback.</p></li>
+        </ol>
+      </div>
+      <div class="option-container">
+        <div class="main-button changelog-button">
+          <h2 class="main-button-text">HIDE</h2>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game-2.js"></script>
+</body>
+
+</html>
