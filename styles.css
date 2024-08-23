@@ -3,7 +3,7 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+.menu-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
@@ -55,7 +55,18 @@ body {
   background-color: grey;
 }
 
-/* Options */
+p {
+  font-family: 'Press Start 2P', cursive;
+  text-align: left;
+  overflow: hidden;
+  line-height: 1.5rem;
+}
+
+ol {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Main menu buttons */
 
 .main-button {
   display: flex;
@@ -81,7 +92,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 600px;
+  height: auto;
   width: 400px;
   padding: 20px;
   border: 10px solid black;
@@ -132,23 +143,16 @@ body {
   background-color: greenyellow;
 }
 
+.medium {
+  background-color: orange;
+}
+
 .hard {
   background-color: red;
 }
 
 .option-title {
   font-size: 1.2rem;
-}
-
-p {
-  font-family: 'Press Start 2P', cursive;
-  text-align: left;
-  overflow: hidden;
-  line-height: 1.5rem;
-}
-
-ol {
-  font-family: 'Press Start 2P', cursive;
 }
 
 .hide {

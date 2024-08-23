@@ -10,28 +10,16 @@
 
 <body>
   <!--Game -->
-  <h1 id="level-title">Press A Key to Start</h1>
+  <h1 class="menu-title">Press A Key to Start</h1>
   <div class="container">
     <div class="row">
-
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
     </div>
 
     <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
     </div>
 
     <!--Instructions -->
@@ -69,15 +57,15 @@
           </div>
         </div>
         <div class="option-container">
-          <p>OPTION 2</p>
-          <div id="id-button" class="option-toggle-button easy">
-            <p id="id-text">2</p>
+          <p>INTERVAL</p>
+          <div id="interval-button" class="option-toggle-button easy">
+            <p id="interval-text">500</p>
           </div>
         </div>
         <div class="option-container">
-          <p>OPTION 3</p>
-          <div id="id-button" class="option-toggle-button easy">
-            <p id="id-text">3</p>
+          <p>SOUND</p>
+          <div id="sound-button" class="option-toggle-button easy">
+            <p id="sound-text">ON</p>
           </div>
         </div>
         <div class="option-container">
@@ -95,12 +83,24 @@
 
     <div class="hide main-menu" id="changelog-menu">
       <h2 class="main-button-text">Changelog</h2>
+      
       <div class="option-container">
         <ol>
+          <p>August 9, 2024</p>
           <li><p>Added options and changelog.</p></li>
           <li><p>Added pattern playback.</p></li>
         </ol>
       </div>
+
+      <div class="option-container">
+        <ol>
+          <p>August 23, 2024</p>
+          <li><p>Added playback interval and sound options.</p></li>
+          <li><p>Properly toggles element visibility on game start and end.</p></li>
+          <li><p>Added highscore.</p></li>
+        </ol>
+      </div>
+
       <div class="option-container">
         <div class="main-button changelog-button">
           <h2 class="main-button-text">HIDE</h2>
@@ -108,6 +108,9 @@
       </div>
     </div>
 
+    <h2 id="high-score" class="menu-title"></h2>
+
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="game-2.js"></script>
 </body>
